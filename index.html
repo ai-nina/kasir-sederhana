@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Kasir Sederhana</title>
+
+    <style>
+        .container {
+    width: 600px;
+    /* padding-left:50px; */
+    padding-top: 30px;
+    margin: 0 auto;
+    }
+
+    td {
+        width:90px;
+    }
+
+    .menu, .cashier {
+        padding-bottom: 20px;
+        border-bottom: 2px solid grey;
+    }
+
+    .cashier {
+        padding-top: 10px;
+    }
+
+    input {
+        display: block;
+        margin-top: 10px;
+        width: 200px;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h3>BUAH SEGAR</h3>
+
+    <div class="menu">
+        <table>
+            <tr>
+                <td>- &nbsp; Apel </td>
+                <td>Rp23.000/kg</td>
+            </tr>
+            <tr>
+                <td>- &nbsp; Pisang</td>
+                <td>Rp12.000/kg</td>
+            </tr>
+            <tr>
+                <td>- &nbsp; Anggur</td>
+                <td>Rp35.000/kg</td>
+            </tr>
+            <tr>
+                <td>- &nbsp; Mangga</td>
+                <td>Rp17.000/kg</td>
+            </tr>
+        </table>
+    </div> <!--menu-->
+
+    <div class="cashier">
+        <label for="menu-buah"> Buah : </label>
+        <select name="buah" id="buah">
+            <option value="Apel">Apel</option>
+            <option value="Pisang">Pisang</option>
+            <option value="Anggur">Anggur</option>
+            <option value="Mangga">Mangga</option>
+        </select>
+        <input type="number" placeholder="Jumlah (kg)" id="kg">
+        <input type="number" placeholder="Masukkan Diskon (0% - 100%)" id="discount">
+    </div> <!--cashier-->
+
+    <div class="bill">
+        <h3>Total Tagihan</h3>
+        <p id="total">--</p>
+    </div>
+</div> <!--container-->
+
+<script src="script.js"></script>
+</body>
+</html>
