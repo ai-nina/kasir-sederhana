@@ -1,2 +1,3 @@
 # kasir-sederhana
-Kuis individu Javascript Studi Independen Progate
+Kuis individu Javascript
+Studi Independen - Progate
