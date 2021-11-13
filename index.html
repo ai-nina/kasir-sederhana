@@ -9,7 +9,6 @@
     <style>
         .container {
     width: 600px;
-    /* padding-left:50px; */
     padding-top: 30px;
     margin: 0 auto;
     }
@@ -31,6 +30,13 @@
         display: block;
         margin-top: 10px;
         width: 200px;
+    }
+
+    .cashier button {
+        margin-top: 10px;
+        padding: 4px 7px;
+        width: 55px;
+        background: rgb(84, 214, 84);
     }
     </style>
 </head>
@@ -60,8 +66,8 @@
     </div> <!--menu-->
 
     <div class="cashier">
-        <label for="menu-buah"> Buah : </label>
-        <select name="buah" id="buah">
+        <label for="fruits-menu"> Buah : </label>
+        <select name="fruits" id="fruits">
             <option value="Apel">Apel</option>
             <option value="Pisang">Pisang</option>
             <option value="Anggur">Anggur</option>
@@ -69,10 +75,11 @@
         </select>
         <input type="number" placeholder="Jumlah (kg)" id="kg">
         <input type="number" placeholder="Masukkan Diskon (0% - 100%)" id="discount">
+        <button onclick="process()">Total</button>
     </div> <!--cashier-->
 
     <div class="bill">
-        <h3>Total Tagihan</h3>
+        <h3>TOTAL TAGIHAN</h3>
         <p id="total">--</p>
     </div>
 </div> <!--container-->
